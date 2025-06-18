@@ -1,0 +1,140 @@
+.titulo {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease;
+}
+
+
+
+.presentacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 700px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.foto {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.descripcion {
+  max-width: 350px;
+  text-align: left;
+}
+
+.descripcion h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.descripcion p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .presentacion {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .descripcion {
+    text-align: center;
+  }
+}
+
+.selector {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.opcion {
+  background-color: #fce4ec; /* rosita pastel */
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  text-align: center;
+  font-weight: bold;
+}
+
+.opcion:hover {
+  transform: scale(1.05);
+  background-color: #ffd6e0;
+}
+
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #465ed6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #354bb1;
+}
+
+
+.carrusel {
+  position: relative;
+  width: 250px;
+}
+
+.carrusel img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.7);
+}

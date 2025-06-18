@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor Web - Control de LEDs</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Control de LEDs y Sensores</h1>
+    </header>
+
+    <section class="control">
+        <h2>Control de LEDs</h2>
+        <div>
+            <button id="led1">LED 1</button>
+            <button id="led2">LED 2</button>
+            <button id="led3">LED 3</button>
+        </div>
+    </section>
+
+    <section class="pwm">
+        <h2>Ajuste de Brillo</h2>
+        <div>
+            <label for="led4">LED 4</label>
+            <input type="range" id="led4" min="0" max="255">
+            <label for="led5">LED 5</label>
+            <input type="range" id="led5" min="0" max="255">
+        </div>
+    </section>
+
+    <section class="sensor">
+        <h2>Lecturas de Sensores</h2>
+        <div>
+            <p>Potenciómetro: <span id="potenciometro">0</span></p>
+            <p>Fotoresistencia: <span id="fotoresistencia">0</span></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Servidor web en ESP32</p>
+    </footer>
+
+    <script src="/control.js"></script>
+</body>
+</html>

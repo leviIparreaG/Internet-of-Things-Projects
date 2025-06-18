@@ -1,0 +1,75 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #c6f1e7, #f7f7ff);
+    color: #333;
+}
+
+header {
+    background-color: #00bfa6;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #00bfa6;
+    border-bottom: 2px solid #00bfa6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #00bfa6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    margin: 0.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #009e88;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0.5rem 0;
+    accent-color: #00bfa6;
+}
+
+.card {
+    background: #f0f9f8;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sensor-output {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+    margin-top: 0.5rem;
+    text-align: center;
+}
